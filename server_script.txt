@@ -1,0 +1,640 @@
+Script started on 2019-11-18 13:51:38-0500
+tfleck@cisc450:~/cisc450/proj2$ exit./udpserver 5 0[K[5Pls -la[2Pmakels -la
+total 34
+drwxrwxr-x 2 tfleck tfleck    9 Nov 18 13:51 .
+drwxrwxr-x 5 tfleck tfleck    5 Nov 18 10:28 ..
+-rw-rw-r-- 1 tfleck tfleck  195 Nov 18 13:45 Makefile
+-rw-rw-r-- 1 tfleck tfleck  189 Nov 18 13:45 ReadMe.txt
+-rw-rw-r-- 1 tfleck tfleck    0 Nov 18 13:51 server_script.txt
+-rw-rw-r-- 1 tfleck tfleck 4340 Nov 18 13:45 test1.txt
+-rw-rw-r-- 1 tfleck tfleck 9139 Nov 18 13:45 test2.txt
+-rw-rw-r-- 1 tfleck tfleck 7759 Nov 18 13:47 udpclient.c
+-rw-rw-r-- 1 tfleck tfleck 8594 Nov 18 13:45 udpserver.c
+tfleck@cisc450:~/cisc450/proj2$ make
+/usr/bin/gcc udpclient.c -o udpclient
+/usr/bin/gcc udpserver.c -lm -o udpserver
+tfleck@cisc450:~/cisc450/proj2$ ls -la
+total 35
+drwxrwxr-x 2 tfleck tfleck    11 Nov 18 13:51 .
+drwxrwxr-x 5 tfleck tfleck     5 Nov 18 10:28 ..
+-rw-rw-r-- 1 tfleck tfleck   195 Nov 18 13:45 Makefile
+-rw-rw-r-- 1 tfleck tfleck   189 Nov 18 13:45 ReadMe.txt
+-rw-rw-r-- 1 tfleck tfleck     0 Nov 18 13:51 server_script.txt
+-rw-rw-r-- 1 tfleck tfleck  4340 Nov 18 13:45 test1.txt
+-rw-rw-r-- 1 tfleck tfleck  9139 Nov 18 13:45 test2.txt
+-rwxrwxr-x 1 tfleck tfleck 13560 Nov 18 13:51 udpclient
+-rw-rw-r-- 1 tfleck tfleck  7759 Nov 18 13:47 udpclient.c
+-rwxrwxr-x 1 tfleck tfleck 17736 Nov 18 13:51 udpserver
+-rw-rw-r-- 1 tfleck tfleck  8594 Nov 18 13:45 udpserver.c
+tfleck@cisc450:~/cisc450/proj2$ ls -la[2Pmakels -la[2Pexit./udpserver 5 0[K
+Usage: ./udpserver <timeout> <packet loss ratio>
+       Timeout:           An integer 1-10 seconds to determine how long to wait for an ACK
+       Packet Loss Ratio: A real number 0-1 to determine what percent of packets are "lost"
+
+tfleck@cisc450:~/cisc450/proj2$ ./udpserver[5Pls -la[2Pmakels -la[2Pexit./udpserver 5 0
+Starting server with timeout: 5, and packet loss ratio: 0.0
+
+I am here to listen ... on port 6680
+
+Requested filename: test2.txt
+
+Packet 0 generated for transmission with 49 data bytes
+Packet 0 successfully transmitted with 49 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 2 data bytes
+Packet 1 successfully transmitted with 2 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 41 data bytes
+Packet 0 successfully transmitted with 41 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 2 data bytes
+Packet 1 successfully transmitted with 2 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 51 data bytes
+Packet 0 successfully transmitted with 51 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 2 data bytes
+Packet 1 successfully transmitted with 2 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 2 data bytes
+Packet 0 successfully transmitted with 2 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 2 data bytes
+Packet 1 successfully transmitted with 2 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 39 data bytes
+Packet 0 successfully transmitted with 39 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 2 data bytes
+Packet 1 successfully transmitted with 2 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 44 data bytes
+Packet 0 successfully transmitted with 44 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 2 data bytes
+Packet 1 successfully transmitted with 2 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 2 data bytes
+Packet 0 successfully transmitted with 2 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 79 data bytes
+Packet 1 successfully transmitted with 79 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 53 data bytes
+Packet 0 successfully transmitted with 53 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 60 data bytes
+Packet 1 successfully transmitted with 60 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 79 data bytes
+Packet 0 successfully transmitted with 79 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 35 data bytes
+Packet 1 successfully transmitted with 35 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 2 data bytes
+Packet 0 successfully transmitted with 2 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 77 data bytes
+Packet 1 successfully transmitted with 77 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 52 data bytes
+Packet 0 successfully transmitted with 52 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 79 data bytes
+Packet 1 successfully transmitted with 79 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 49 data bytes
+Packet 0 successfully transmitted with 49 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 41 data bytes
+Packet 1 successfully transmitted with 41 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 2 data bytes
+Packet 0 successfully transmitted with 2 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 63 data bytes
+Packet 1 successfully transmitted with 63 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 72 data bytes
+Packet 0 successfully transmitted with 72 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 79 data bytes
+Packet 1 successfully transmitted with 79 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 1 data bytes
+Packet 0 successfully transmitted with 1 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 77 data bytes
+Packet 1 successfully transmitted with 77 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 28 data bytes
+Packet 0 successfully transmitted with 28 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 72 data bytes
+Packet 1 successfully transmitted with 72 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 74 data bytes
+Packet 0 successfully transmitted with 74 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 79 data bytes
+Packet 1 successfully transmitted with 79 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 77 data bytes
+Packet 0 successfully transmitted with 77 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 79 data bytes
+Packet 1 successfully transmitted with 79 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 47 data bytes
+Packet 0 successfully transmitted with 47 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 2 data bytes
+Packet 1 successfully transmitted with 2 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 58 data bytes
+Packet 0 successfully transmitted with 58 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 56 data bytes
+Packet 1 successfully transmitted with 56 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 2 data bytes
+Packet 0 successfully transmitted with 2 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 79 data bytes
+Packet 1 successfully transmitted with 79 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 1 data bytes
+Packet 0 successfully transmitted with 1 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 79 data bytes
+Packet 1 successfully transmitted with 79 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 1 data bytes
+Packet 0 successfully transmitted with 1 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 34 data bytes
+Packet 1 successfully transmitted with 34 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 32 data bytes
+Packet 0 successfully transmitted with 32 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 2 data bytes
+Packet 1 successfully transmitted with 2 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 79 data bytes
+Packet 0 successfully transmitted with 79 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 2 data bytes
+Packet 1 successfully transmitted with 2 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 79 data bytes
+Packet 0 successfully transmitted with 79 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 1 data bytes
+Packet 1 successfully transmitted with 1 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 79 data bytes
+Packet 0 successfully transmitted with 79 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 79 data bytes
+Packet 1 successfully transmitted with 79 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 1 data bytes
+Packet 0 successfully transmitted with 1 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 79 data bytes
+Packet 1 successfully transmitted with 79 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 79 data bytes
+Packet 0 successfully transmitted with 79 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 1 data bytes
+Packet 1 successfully transmitted with 1 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 76 data bytes
+Packet 0 successfully transmitted with 76 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 77 data bytes
+Packet 1 successfully transmitted with 77 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 73 data bytes
+Packet 0 successfully transmitted with 73 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 15 data bytes
+Packet 1 successfully transmitted with 15 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 2 data bytes
+Packet 0 successfully transmitted with 2 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 76 data bytes
+Packet 1 successfully transmitted with 76 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 77 data bytes
+Packet 0 successfully transmitted with 77 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 73 data bytes
+Packet 1 successfully transmitted with 73 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 38 data bytes
+Packet 0 successfully transmitted with 38 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 2 data bytes
+Packet 1 successfully transmitted with 2 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 78 data bytes
+Packet 0 successfully transmitted with 78 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 76 data bytes
+Packet 1 successfully transmitted with 76 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 78 data bytes
+Packet 0 successfully transmitted with 78 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 78 data bytes
+Packet 1 successfully transmitted with 78 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 68 data bytes
+Packet 0 successfully transmitted with 68 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 77 data bytes
+Packet 1 successfully transmitted with 77 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 56 data bytes
+Packet 0 successfully transmitted with 56 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 65 data bytes
+Packet 1 successfully transmitted with 65 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 65 data bytes
+Packet 0 successfully transmitted with 65 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 64 data bytes
+Packet 1 successfully transmitted with 64 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 7 data bytes
+Packet 0 successfully transmitted with 7 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 2 data bytes
+Packet 1 successfully transmitted with 2 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 74 data bytes
+Packet 0 successfully transmitted with 74 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 73 data bytes
+Packet 1 successfully transmitted with 73 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 79 data bytes
+Packet 0 successfully transmitted with 79 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 2 data bytes
+Packet 1 successfully transmitted with 2 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 75 data bytes
+Packet 0 successfully transmitted with 75 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 73 data bytes
+Packet 1 successfully transmitted with 73 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 64 data bytes
+Packet 0 successfully transmitted with 64 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 60 data bytes
+Packet 1 successfully transmitted with 60 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 79 data bytes
+Packet 0 successfully transmitted with 79 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 2 data bytes
+Packet 1 successfully transmitted with 2 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 67 data bytes
+Packet 0 successfully transmitted with 67 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 46 data bytes
+Packet 1 successfully transmitted with 46 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 2 data bytes
+Packet 0 successfully transmitted with 2 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 66 data bytes
+Packet 1 successfully transmitted with 66 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 61 data bytes
+Packet 0 successfully transmitted with 61 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 61 data bytes
+Packet 1 successfully transmitted with 61 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 66 data bytes
+Packet 0 successfully transmitted with 66 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 66 data bytes
+Packet 1 successfully transmitted with 66 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 63 data bytes
+Packet 0 successfully transmitted with 63 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 62 data bytes
+Packet 1 successfully transmitted with 62 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 67 data bytes
+Packet 0 successfully transmitted with 67 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 61 data bytes
+Packet 1 successfully transmitted with 61 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 59 data bytes
+Packet 0 successfully transmitted with 59 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 64 data bytes
+Packet 1 successfully transmitted with 64 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 63 data bytes
+Packet 0 successfully transmitted with 63 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 61 data bytes
+Packet 1 successfully transmitted with 61 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 63 data bytes
+Packet 0 successfully transmitted with 63 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 64 data bytes
+Packet 1 successfully transmitted with 64 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 47 data bytes
+Packet 0 successfully transmitted with 47 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 2 data bytes
+Packet 1 successfully transmitted with 2 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 79 data bytes
+Packet 0 successfully transmitted with 79 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 2 data bytes
+Packet 1 successfully transmitted with 2 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 79 data bytes
+Packet 0 successfully transmitted with 79 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 2 data bytes
+Packet 1 successfully transmitted with 2 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 79 data bytes
+Packet 0 successfully transmitted with 79 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 2 data bytes
+Packet 1 successfully transmitted with 2 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 79 data bytes
+Packet 0 successfully transmitted with 79 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 2 data bytes
+Packet 1 successfully transmitted with 2 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 79 data bytes
+Packet 0 successfully transmitted with 79 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 2 data bytes
+Packet 1 successfully transmitted with 2 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 79 data bytes
+Packet 0 successfully transmitted with 79 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 2 data bytes
+Packet 1 successfully transmitted with 2 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 79 data bytes
+Packet 0 successfully transmitted with 79 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 2 data bytes
+Packet 1 successfully transmitted with 2 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 39 data bytes
+Packet 0 successfully transmitted with 39 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 2 data bytes
+Packet 1 successfully transmitted with 2 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 66 data bytes
+Packet 0 successfully transmitted with 66 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 62 data bytes
+Packet 1 successfully transmitted with 62 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 61 data bytes
+Packet 0 successfully transmitted with 61 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 46 data bytes
+Packet 1 successfully transmitted with 46 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 2 data bytes
+Packet 0 successfully transmitted with 2 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 67 data bytes
+Packet 1 successfully transmitted with 67 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 64 data bytes
+Packet 0 successfully transmitted with 64 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 65 data bytes
+Packet 1 successfully transmitted with 65 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 67 data bytes
+Packet 0 successfully transmitted with 67 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 65 data bytes
+Packet 1 successfully transmitted with 65 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 63 data bytes
+Packet 0 successfully transmitted with 63 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 64 data bytes
+Packet 1 successfully transmitted with 64 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 66 data bytes
+Packet 0 successfully transmitted with 66 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 50 data bytes
+Packet 1 successfully transmitted with 50 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 2 data bytes
+Packet 0 successfully transmitted with 2 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 60 data bytes
+Packet 1 successfully transmitted with 60 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 63 data bytes
+Packet 0 successfully transmitted with 63 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 66 data bytes
+Packet 1 successfully transmitted with 66 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 63 data bytes
+Packet 0 successfully transmitted with 63 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 66 data bytes
+Packet 1 successfully transmitted with 66 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 65 data bytes
+Packet 0 successfully transmitted with 65 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 62 data bytes
+Packet 1 successfully transmitted with 62 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 55 data bytes
+Packet 0 successfully transmitted with 55 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 63 data bytes
+Packet 1 successfully transmitted with 63 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 65 data bytes
+Packet 0 successfully transmitted with 65 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 66 data bytes
+Packet 1 successfully transmitted with 66 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 39 data bytes
+Packet 0 successfully transmitted with 39 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 2 data bytes
+Packet 1 successfully transmitted with 2 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 67 data bytes
+Packet 0 successfully transmitted with 67 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 67 data bytes
+Packet 1 successfully transmitted with 67 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 64 data bytes
+Packet 0 successfully transmitted with 64 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 64 data bytes
+Packet 1 successfully transmitted with 64 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 64 data bytes
+Packet 0 successfully transmitted with 64 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 58 data bytes
+Packet 1 successfully transmitted with 58 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 45 data bytes
+Packet 0 successfully transmitted with 45 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 2 data bytes
+Packet 1 successfully transmitted with 2 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 61 data bytes
+Packet 0 successfully transmitted with 61 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 58 data bytes
+Packet 1 successfully transmitted with 58 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 60 data bytes
+Packet 0 successfully transmitted with 60 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 67 data bytes
+Packet 1 successfully transmitted with 67 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 65 data bytes
+Packet 0 successfully transmitted with 65 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 62 data bytes
+Packet 1 successfully transmitted with 62 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 63 data bytes
+Packet 0 successfully transmitted with 63 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 65 data bytes
+Packet 1 successfully transmitted with 65 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 65 data bytes
+Packet 0 successfully transmitted with 65 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 62 data bytes
+Packet 1 successfully transmitted with 62 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 62 data bytes
+Packet 0 successfully transmitted with 62 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 8 data bytes
+Packet 1 successfully transmitted with 8 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 2 data bytes
+Packet 0 successfully transmitted with 2 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 65 data bytes
+Packet 1 successfully transmitted with 65 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 65 data bytes
+Packet 0 successfully transmitted with 65 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 61 data bytes
+Packet 1 successfully transmitted with 61 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 65 data bytes
+Packet 0 successfully transmitted with 65 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 9 data bytes
+Packet 1 successfully transmitted with 9 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 2 data bytes
+Packet 0 successfully transmitted with 2 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 56 data bytes
+Packet 1 successfully transmitted with 56 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 2 data bytes
+Packet 0 successfully transmitted with 2 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 52 data bytes
+Packet 1 successfully transmitted with 52 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 2 data bytes
+Packet 0 successfully transmitted with 2 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 56 data bytes
+Packet 1 successfully transmitted with 56 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 2 data bytes
+Packet 0 successfully transmitted with 2 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 61 data bytes
+Packet 1 successfully transmitted with 61 data bytes
+ACK 1 received
+Packet 0 generated for transmission with 19 data bytes
+Packet 0 successfully transmitted with 19 data bytes
+ACK 0 received
+Packet 1 generated for transmission with 2 data bytes
+Packet 1 successfully transmitted with 2 data bytes
+ACK 1 received
+
+End of transmission packet with sequence number 0 transmitted
+
+---Server Statistics---
+Number of data packets generated for transmission: 190
+Number of data bytes generated for transmission: 9139
+Number of packets generated for retransmission: 190
+Number of data packets dropped due to loss: 0
+Number of data packets transmitted successfully: 190
+Number of ACKs received: 190
+Number of timeouts expired: 0
+tfleck@cisc450:~/cisc450/proj2$ ls -la
+total 59
+drwxrwxr-x 2 tfleck tfleck    13 Nov 18 13:52 .
+drwxrwxr-x 5 tfleck tfleck     5 Nov 18 10:28 ..
+-rw-rw-r-- 1 tfleck tfleck 27608 Nov 18 13:53 client_script.txt
+-rw-rw-r-- 1 tfleck tfleck   195 Nov 18 13:45 Makefile
+-rw-rw-r-- 1 tfleck tfleck  9139 Nov 18 13:52 out.txt
+-rw-rw-r-- 1 tfleck tfleck   189 Nov 18 13:45 ReadMe.txt
+-rw-rw-r-- 1 tfleck tfleck 24576 Nov 18 13:52 server_script.txt
+-rw-rw-r-- 1 tfleck tfleck  4340 Nov 18 13:45 test1.txt
+-rw-rw-r-- 1 tfleck tfleck  9139 Nov 18 13:45 test2.txt
+-rwxrwxr-x 1 tfleck tfleck 13560 Nov 18 13:51 udpclient
+-rw-rw-r-- 1 tfleck tfleck  7759 Nov 18 13:47 udpclient.c
+-rwxrwxr-x 1 tfleck tfleck 17736 Nov 18 13:51 udpserver
+-rw-rw-r-- 1 tfleck tfleck  8594 Nov 18 13:45 udpserver.c
+tfleck@cisc450:~/cisc450/proj2$ exit
+exit
+
+Script done on 2019-11-18 13:53:06-0500
